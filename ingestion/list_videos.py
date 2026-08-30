@@ -13,8 +13,11 @@ import os
 from datetime import datetime, timedelta
 
 import yt_dlp
+from dotenv import load_dotenv
 
-CHANNEL_URL = "https://www.youtube.com/@HisChannelHandle/videos"  # TODO: update this
+load_dotenv()  # reads variables from a local .env file
+
+CHANNEL_URL = os.environ["YT_CHANNEL_URL"]
 DAYS_BACK = 365
 OUTPUT_PATH = "data/video_list.json"
 

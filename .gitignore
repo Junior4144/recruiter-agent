@@ -147,6 +147,13 @@ activemq-data/
 # SageMath parsed files
 *.sage.py
 
+# --- Project-specific additions ---
+data/
+*.key
+*credentials*.json
+service-account*.json
+sessions/
+
 # Environments
 .env
 .envrc
