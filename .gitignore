@@ -150,9 +150,15 @@ activemq-data/
 # --- Project-specific additions ---
 data/
 *.key
+*.pem
 *credentials*.json
 service-account*.json
+client_secret*.json
 sessions/
+
+# ADK local state (session.db holds past conversations)
+.adk/
+*.db
 
 # Environments
 .env
